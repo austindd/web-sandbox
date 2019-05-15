@@ -70,6 +70,7 @@ exports.mapObj = function mapObj(fn) {
             res[keys[i]] = fn(obj[keys[i]]);
         }
         Object.setPrototypeOf(res, obj.prototype);
+        Object.freeze(res);
     }
 }
 
