@@ -1,0 +1,32 @@
+body {
+  margin: 0; }
+
+#app {
+  background-color: #141010; }
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-areas: "placeholder placeholder placeholder" "placeholder welcome placeholder" "placeholder placeholder placeholder"; }
+
+#welcome {
+  display: flex;
+  flex-direction: vertical;
+  grid-area: "welcome";
+  height: 33.33vh;
+  text-align: center;
+  font-family: sans-serif;
+  color: #80DB64; }
+
+.fill-parent {
+  margin: auto;
+  position: relative;
+  height: max-content;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 32px; }
+
+.placeholder {
+  grid-area: "placeholder";
+  height: 33.33vh; }
